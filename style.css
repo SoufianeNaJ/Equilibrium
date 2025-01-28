@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+picture img{
+    width: 320px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
+}
+main{
+    width: 380px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    border-radius: 20px;
+    transform: translateY(30%);
+    margin-bottom: 30%;
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    padding: 10px 30px;
+
+}
+#paragraph{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    padding: 10px 30px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.ETH{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-bottom: 30px;
+}
+.ETH #icon_1{
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    font-weight: 600;
+}
+.ETH .days{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsla(215, 52%, 70%, 0.363);
+    width: 300px;
+    margin: 0 30px;
+    gap: 10px;
+}
+.about img{
+    width: 50px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin: 30px 0;
+    margin-right: 10px;
+}
+.about p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+.about span{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+.fa-solid{
+    margin-right: 10px;
+}
+.title:hover,
+.about span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+picture img:hover{
+    filter: grayscale(90%) sepia(100%) hue-rotate(180deg);
+}
+@media (max-width:900px) {
+    main{
+        transform: translateY(20%);
+        margin-left: 20px;
+        margin-right: 60px;
+}
+}
